@@ -35,11 +35,12 @@
 }
 .navigate-to-home {
     position: absolute;
-    bottom: 24px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
 }
 .navigate-to-home a {
+    color: white;
     font-size: 1.6rem;
     text-decoration: underline;
     text-transform: uppercase;

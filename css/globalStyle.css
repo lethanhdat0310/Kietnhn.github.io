@@ -224,6 +224,16 @@ footer {
 #form-email-footer .form-control:focus {
     color: #000;
 }
+/* load */
+.load-more {
+    margin: 16px 0;
+}
+.load-more button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 /* scroolbar */
 ::-webkit-scrollbar {
     width: 10px;

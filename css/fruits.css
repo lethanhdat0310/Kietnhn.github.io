@@ -74,7 +74,12 @@
 }
 .card-title {
     color: #334862;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    height: 24px;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 .card-price {
     color: #000;
@@ -86,18 +91,13 @@
     text-decoration: underline;
     margin-left: 1px;
 }
-/* load */
-.load-more {
-    margin: 16px 0;
-}
-.load-more button {
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
 
 /* responsive */
 @media screen and (max-width: 576px) {
+    .card-title {
+        height: 48px;
+        -webkit-line-clamp: 2;
+    }
     .title {
         font-size: 1.6rem;
     }
