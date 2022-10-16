@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FruitsShop-Chi tiết trái cây</title>
+        <link
+            rel="stylesheet"
+            href="../bootstrap/bootstrap-5.2.1-dist/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../icons/themify-icons/themify-icons.css"
+        />
+        <link rel="stylesheet" href="../css/globalStyle.css" />
+        <link rel="stylesheet" href="../css/fruits.css" />
+        <link rel="stylesheet" href="../css/detailFruit.css" />
+    </head>
+    <body>
+        <div id="root">
+            <div class="app">
+                <header class="bg-light">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-md">
+                            <div class="container-fluid">
+                                <button
+                                    class="navbar-toggler d-block d-md-none"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation"
+                                >
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <a
+                                    class="navbar-brand d-block d-md-none d-lg-block"
+                                    href="index.html"
+                                    >FruitsShop</a
+                                >
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary d-md-none d-block"
+                                >
+                                    <a
+                                        href="login.html"
+                                        class="slide__link text"
+                                    >
+                                        Đăng nhập
+                                    </a>
+                                </button>
+
+                                <div
+                                    class="collapse navbar-collapse justify-content-between"
+                                    id="navbarSupportedContent"
+                                >
+                                    <ul class="navbar-nav me-auto">
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link"
+                                                aria-current="page"
+                                                href="index.html"
+                                                >Trang chủ</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link"
+                                                href="about.html"
+                                                >Về chúng tôi</a
+                                            >
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link"
+                                                href="fruits.html"
+                                            >
+                                                Cửa hàng
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link"
+                                                href="sitemap.html"
+                                                >Sơ đồ</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="auth.html"
+                                                >Tác giả</a
+                                            >
+                                        </li>
+                                    </ul>
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-primary d-md-block d-none mx-2"
+                                    >
+                                        <a
+                                            href="login.html"
+                                            class="slide__link text"
+                                        >
+                                            Đăng nhập
+                                        </a>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-secondary d-md-block d-none"
+                                    >
+                                        <a
+                                            href="signIn.html"
+                                            class="slide__link text"
+                                        >
+                                            Đăng ký
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+                <div class="container text-center py-4">
+                    <h2 class="title my-4 text-start">Trái cây nhập khẩu</h2>
+
+                    <div class="container mb-30 product__detail">
+                        <div class="row">
+                            <div class="col col-5 col-md-12 mb-15">
+                                <div class="card d-block">
+                                    <img
+                                        src="../img/fruit-8.jpg"
+                                        class="card-img-top"
+                                        alt="fruit-1"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col col-7 col-md-12 mb-15">
+                                <div class="product__info text-start">
+                                    <h1 href="" class="product__name">
+                                        Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                    </h1>
+                                    <span class="product__price"
+                                        >1,400,000</span
+                                    >
+                                    <ul class="product__description">
+                                        <li>
+                                            Quả to, tròn, vỏ màu vàng đặc trưng,
+                                            xuất xứ từ Ai Cập
+                                        </li>
+                                        <li>
+                                            Hương vị ngọt thanh và có chút chát
+                                            nhẹ
+                                        </li>
+                                        <li>
+                                            Giàu chất xơ tự nhiên, chống táo bón
+                                        </li>
+                                        <li>
+                                            Thích hợp để ăn và để biếu rất sang
+                                            trọng
+                                        </li>
+                                        <li>
+                                            100% nói không với chất bảo quản &
+                                            trái cây Trung Quốc
+                                        </li>
+                                        <li>Đổi trả sản phẩm trong vòng 24h</li>
+                                    </ul>
+                                    <div class="product__btns">
+                                        <div class="product__count">
+                                            <button
+                                                onclick="document.querySelector('#count').stepDown()"
+                                            >
+                                                -
+                                            </button>
+                                            <input
+                                                type="number"
+                                                name="count"
+                                                id="count"
+                                                min="1"
+                                                step="1"
+                                                value="1"
+                                            />
+                                            <button
+                                                onclick="document.querySelector('#count').stepUp()"
+                                            >
+                                                +
+                                            </button>
+                                        </div>
+                                        <button
+                                            class="btn btn-warning product__btn"
+                                        >
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="title my-4 text-start">Sản phẩm liên quan</h2>
+                    <div class="container mb-30">
+                        <div class="row product-recomend">
+                            <button class="product-recomend__btn">
+                                <i class="ti-angle-left"></i>
+                            </button>
+                            <button
+                                class="product-recomend__btn product-recomend__btn--right"
+                            >
+                                <i class="ti-angle-right"></i>
+                            </button>
+                            <div
+                                class="col col-lg-3 mb-15 product-recomend__item"
+                            >
+                                <div class="card d-block">
+                                    <a
+                                        href="detailFruit.html"
+                                        class="card-img d-block"
+                                    >
+                                        <img
+                                            src="../img/fruit-8.jpg"
+                                            class="card-img-top"
+                                            alt="fruit-1"
+                                        />
+                                    </a>
+                                    <div class="card-body">
+                                        <a
+                                            href="detailFruit.html"
+                                            class="card-title d-block"
+                                        >
+                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                        </a>
+                                        <span class="card-price"
+                                            >1,400,000</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col col-lg-3 mb-15 product-recomend__item"
+                            >
+                                <div class="card d-block">
+                                    <a
+                                        href="detailFruit.html"
+                                        class="card-img d-block"
+                                    >
+                                        <img
+                                            src="../img/fruit-8.jpg"
+                                            class="card-img-top"
+                                            alt="fruit-1"
+                                        />
+                                    </a>
+                                    <div class="card-body">
+                                        <a
+                                            href="detailFruit.html"
+                                            class="card-title d-block"
+                                        >
+                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                        </a>
+                                        <span class="card-price"
+                                            >1,400,000</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col col-lg-3 mb-15 product-recomend__item"
+                            >
+                                <div class="card d-block">
+                                    <a
+                                        href="detailFruit.html"
+                                        class="card-img d-block"
+                                    >
+                                        <img
+                                            src="../img/fruit-8.jpg"
+                                            class="card-img-top"
+                                            alt="fruit-1"
+                                        />
+                                    </a>
+                                    <div class="card-body">
+                                        <a
+                                            href="detailFruit.html"
+                                            class="card-title d-block"
+                                        >
+                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                        </a>
+                                        <span class="card-price"
+                                            >1,400,000</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col col-lg-3 mb-15 product-recomend__item"
+                            >
+                                <div class="card d-block">
+                                    <a
+                                        href="detailFruit.html"
+                                        class="card-img d-block"
+                                    >
+                                        <img
+                                            src="../img/fruit-8.jpg"
+                                            class="card-img-top"
+                                            alt="fruit-1"
+                                        />
+                                    </a>
+                                    <div class="card-body">
+                                        <a
+                                            href="detailFruit.html"
+                                            class="card-title d-block"
+                                        >
+                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                        </a>
+                                        <span class="card-price"
+                                            >1,400,000</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col col-lg-3 mb-15 d-none product-recomend__item"
+                            >
+                                <div class="card d-block">
+                                    <a
+                                        href="detailFruit.html"
+                                        class="card-img d-block"
+                                    >
+                                        <img
+                                            src="../img/fruit-8.jpg"
+                                            class="card-img-top"
+                                            alt="fruit-1"
+                                        />
+                                    </a>
+                                    <div class="card-body">
+                                        <a
+                                            href="detailFruit.html"
+                                            class="card-title d-block"
+                                        >
+                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                        </a>
+                                        <span class="card-price"
+                                            >1,400,000</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col col-lg-3 mb-15 d-none product-recomend__item"
+                            >
+                                <div class="card d-block">
+                                    <a
+                                        href="detailFruit.html"
+                                        class="card-img d-block"
+                                    >
+                                        <img
+                                            src="../img/fruit-8.jpg"
+                                            class="card-img-top"
+                                            alt="fruit-1"
+                                        />
+                                    </a>
+                                    <div class="card-body">
+                                        <a
+                                            href="detailFruit.html"
+                                            class="card-title d-block"
+                                        >
+                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                        </a>
+                                        <span class="card-price"
+                                            >1,400,000</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col col-lg-3 mb-15 d-none product-recomend__item"
+                            >
+                                <div class="card d-block">
+                                    <a
+                                        href="detailFruit.html"
+                                        class="card-img d-block"
+                                    >
+                                        <img
+                                            src="../img/fruit-8.jpg"
+                                            class="card-img-top"
+                                            alt="fruit-1"
+                                        />
+                                    </a>
+                                    <div class="card-body">
+                                        <a
+                                            href="detailFruit.html"
+                                            class="card-title d-block"
+                                        >
+                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                        </a>
+                                        <span class="card-price"
+                                            >1,400,000</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="grid bg-light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-sm-3 mb-4 mb-sm-0">
+                                <h2 class="text">Mua hàng</h2>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="text" href="fruits.html"
+                                            >Trái cây trong nước</a
+                                        >
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="text" href="fruits.html"
+                                            >Trái cây nhập khẩu</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4 mb-sm-0">
+                                <h2 class="text">Dịch vụ khách hàng</h2>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="text" href="#"
+                                            >Khách hàng thân thiết</a
+                                        >
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="text" href="#"
+                                            >Chính sách vận chuyển</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-3 mb-4 mb-sm-0">
+                                <h2 class="text">Giới thiệu</h2>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a class="text" href="about.html"
+                                            >Về chúng tôi</a
+                                        >
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a class="text" href="#"
+                                            >Chính sách bảo mật</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-3 mb-4 mb-sm-0">
+                                <div class="contact">
+                                    <h2 class="text">Liên hệ với chúng tôi</h2>
+                                    <ul class="nav nav-pills my-4 my-sm-2">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="ti-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="ti-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="ti-email"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="ti-mobile"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <h2 class="text mb-3">
+                                        Đăng ký để nhận ưu đãi
+                                    </h2>
+                                    <form action="" id="form-email-footer">
+                                        <div class="form-group">
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                placeholder=" "
+                                                rules="email"
+                                                name="email"
+                                                id="email"
+                                            />
+                                            <label
+                                                for="email"
+                                                class="form-label"
+                                            >
+                                                Email
+                                            </label>
+                                            <span class="form-message"> </span>
+                                            <span class="form-check">
+                                                <i class="ti-check"></i>
+                                            </span>
+                                        </div>
+                                        <button
+                                            type="submit"
+                                            class="btn btn-primary w-100 btn-lg"
+                                        >
+                                            Submit
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <span class="copy-right">
+                                copy-right-by-kietnguyen564042@gmail.com
+                            </span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../bootstrap/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+        <script src="../js/validate.js"></script>
+    </body>
+</html>

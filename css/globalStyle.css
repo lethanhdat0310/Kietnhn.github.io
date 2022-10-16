@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.app {
+    /* width: 1080px; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+button {
+    border: none;
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style-type: none;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+select,
+input {
+    outline: none;
+    border: none;
+}
+/* custom css */
+.ml-12-5 {
+    margin-left: 12.5%;
+}
+.ml-25 {
+    margin-left: 25%;
+}
+.ml-50 {
+    margin-left: 50%;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.mb-16 {
+    margin-bottom: 16px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.text {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+h2.text {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+/* header */
+.navbar-brand {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+.nav-link {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* logo */
+.logo__brand {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+/* avatar */
+.avatar {
+    pointer-events: none;
+    user-select: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
+.avatar img {
+    border-radius: 9999px;
+}
+
+/* slide-modal */
+
+.logo__name {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+}
+.logo__description {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+/* footer */
+footer {
+    padding: 32px 0;
+    width: 100%;
+    background-color: #494949;
+}
+.list-group-item {
+    background-color: transparent;
+    border: unset;
+}
+.list-group-item a {
+    color: #555;
+}
+.nav-pills {
+    margin-bottom: 8px;
+}
+.nav-pills .nav-link {
+    color: #ccc;
+}
+.nav-pills .nav-link:hover {
+    color: var(--primary);
+}
+
+/* copy-right */
+.copy-right {
+    pointer-events: none;
+    user-select: none;
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* form */
+.form-group {
+    width: 300px;
+    position: relative;
+    margin-bottom: 28px;
+}
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    border-radius: 12px !important;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.form-check,
+.form-message {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form-control:focus {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.form-label {
+    font-size: 1.6rem;
+    position: absolute;
+    color: #b3b3b5;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease-in 0.3s;
+}
+.form-check {
+    display: none;
+    color: #3af381;
+    font-weight: 1.6rem;
+}
+
+.form-control:not(:placeholder-shown) + .form-label,
+.form-control:focus + .form-label {
+    top: -12px;
+    left: 0px;
+    font-weight: 600;
+}
+
+.form-control:not(:placeholder-shown) + .form-label,
+.form-control:focus + .form-label {
+    color: var(--primary-color);
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+.form-group.invalid .form-control:focus {
+    box-shadow: 0 0 5px #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+.form-group.invalid .form-check {
+    display: none;
+}
+
+/* custom form email footer */
+
+#form-email-footer .form-group {
+    width: 100%;
+    margin-bottom: 12px;
+}
+#form-email-footer .form-control {
+    color: #000;
+    box-shadow: 0 0 5px #ccc;
+    padding-left: 16px;
+}
+#form-email-footer .form-control:not(:placeholder-shown) + .form-label,
+#form-email-footer .form-control:focus + .form-label {
+    top: 0;
+    left: 12px;
+    font-weight: 600;
+    background-color: #f8f9fa;
+    padding: 1px 4px;
+}
+#form-email-footer .form-control:focus {
+    color: #000;
+}
+/* scroolbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* responsive */
+@media screen and (max-width: 576px) {
+    footer {
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
+}
