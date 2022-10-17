@@ -132,3 +132,16 @@ tbody {
 
     color: #bc9e2f;
 }
+.return-home-btn {
+    margin: 0 8px;
+}
+/* responsive */
+@media screen and (max-width: 380px) {
+    .return-home-btn {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+    .edit-product-btn {
+        margin: 0 8px 8px;
+    }
+}
