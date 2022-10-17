@@ -50,16 +50,7 @@
     font-size: 1.6rem;
     color: #777;
 }
-/* custom input[type:number] */
-input[type="number"] {
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
-    appearance: textfield;
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-}
+
 .product__btns {
     position: relative;
     display: flex;
@@ -128,4 +119,21 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .product-recomend__btn:hover {
     color: #faad3d;
+}
+/* toast */
+.product-toast {
+    position: fixed;
+    top: 50px;
+    right: 0;
+}
+.product-toast__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.product-toast .btn-close {
+    font-size: 1.6rem;
+}
+.product-toast__link {
+    font-size: 1.4rem;
+    font-weight: 600;
 }

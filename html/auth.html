@@ -39,17 +39,6 @@
                                     href="index.html"
                                     >FruitsShop</a
                                 >
-                                <button
-                                    type="button"
-                                    class="btn btn-outline-primary d-md-none d-block"
-                                >
-                                    <a
-                                        href="login.html"
-                                        class="slide__link text"
-                                    >
-                                        Đăng nhập
-                                    </a>
-                                </button>
 
                                 <div
                                     class="collapse navbar-collapse justify-content-between"
@@ -94,30 +83,67 @@
                                                 >Tác giả</a
                                             >
                                         </li>
+                                        <li class="nav-item d-block d-md-none">
+                                            <a class="nav-link" href="cart.html"
+                                                >Giỏ hàng</a
+                                            >
+                                        </li>
+                                        <li class="nav-item d-block d-md-none">
+                                            <a
+                                                class="nav-link"
+                                                href="login.html"
+                                                >Đăng nhập</a
+                                            >
+                                        </li>
                                     </ul>
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-primary d-md-block d-none mx-2"
-                                    >
-                                        <a
-                                            href="login.html"
-                                            class="slide__link text"
-                                        >
-                                            Đăng nhập
-                                        </a>
-                                    </button>
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-secondary d-md-block d-none"
-                                    >
-                                        <a
-                                            href="signIn.html"
-                                            class="slide__link text"
-                                        >
-                                            Đăng ký
-                                        </a>
-                                    </button>
                                 </div>
+                                <div class="header__cart">
+                                    <div class="header__cart-wrap">
+                                        <button class="btn btn-outline-success">
+                                            <i
+                                                class="header__cart-icon ti-shopping-cart"
+                                            ></i>
+                                            <span class="header__cart-notice"
+                                                >0</span
+                                            >
+                                        </button>
+                                        <div class="header__cart-list">
+                                            <img
+                                                src="../img/no_cart.png"
+                                                alt="Chưa có hàng"
+                                                class="header__cart-list--no-cart-img"
+                                            />
+                                            <span
+                                                class="header__cart-list--no-cart-msg"
+                                                >Chưa có sản phẩm</span
+                                            >
+                                            <h4 class="header__cart-heading">
+                                                Sản phẩm đã thêm
+                                            </h4>
+                                            <ul
+                                                class="header__cart-list-item"
+                                            ></ul>
+
+                                            <a
+                                                href="cart.html "
+                                                class="header__cart-item-btn btn btn--primary"
+                                            >
+                                                Xem giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary d-md-block d-none mx-2"
+                                >
+                                    <a
+                                        href="login.html"
+                                        class="slide__link text"
+                                    >
+                                        Đăng nhập
+                                    </a>
+                                </button>
                             </div>
                         </nav>
                     </div>
@@ -185,7 +211,9 @@
                                 </td>
                             </tr>
                         </table>
-
+                    </div>
+                    <div class="container">
+                        <h3 class="auths__title">Mô tả về trang web</h3>
                         <p class="auth__link">
                             Bố cục của trang web được lấy ý tưởng từ trang web
                             <a
@@ -194,6 +222,21 @@
                                 rel="noopener noreferrer"
                                 >vinfruits.com</a
                             >
+                        </p>
+                        <p class="auth__link">
+                            Trang web có đầy đủ tính năng như: chọn sản phẩm,
+                            thêm vào giỏ hàng,xóa khỏi giỏ hàng, tính tổng giỏ
+                            hàng, thay đổi số lượng, cập nhật lại giá
+                        </p>
+                        <p class="auth__link">
+                            Đăng nhập, đăng ký đã được validate, cần validate
+                            theo mesage để được đẩy vào route tiếp theo, có link
+                            hỗ trợ quay lại home ở dưới khung đăng ký/đăng nhập
+                        </p>
+                        <p class="auth__link">
+                            Dữ liệu trên trang web được lưu trữ trên
+                            localStorage với 2 item là: 'web_fruits_products' và
+                            'web_fruits_detail_product'
                         </p>
                         <p class="auth__link">
                             Source code
@@ -322,7 +365,11 @@
                 </footer>
             </div>
         </div>
+        <script src="../jquerry/min.js"></script>
+        <script src="../jquerry/index.js"></script>
         <script src="../bootstrap/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
         <script src="../js/validate.js"></script>
+        <script src="../js/product.js"></script>
+        <script src="../js/addProduct.js"></script>
     </body>
 </html>

@@ -138,4 +138,5 @@ Validator("#form-sign-in", {
 Validator("#form-log-in", {
     replace: "../html/fruits.html",
 });
+Validator("#form-pay");
 Validator("#form-email-footer");

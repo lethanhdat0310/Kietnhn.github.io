@@ -40,17 +40,6 @@
                                     href="index.html"
                                     >FruitsShop</a
                                 >
-                                <button
-                                    type="button"
-                                    class="btn btn-outline-primary d-md-none d-block"
-                                >
-                                    <a
-                                        href="login.html"
-                                        class="slide__link text"
-                                    >
-                                        Đăng nhập
-                                    </a>
-                                </button>
 
                                 <div
                                     class="collapse navbar-collapse justify-content-between"
@@ -93,30 +82,67 @@
                                                 >Tác giả</a
                                             >
                                         </li>
+                                        <li class="nav-item d-block d-md-none">
+                                            <a class="nav-link" href="cart.html"
+                                                >Giỏ hàng</a
+                                            >
+                                        </li>
+                                        <li class="nav-item d-block d-md-none">
+                                            <a
+                                                class="nav-link"
+                                                href="login.html"
+                                                >Đăng nhập</a
+                                            >
+                                        </li>
                                     </ul>
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-primary d-md-block d-none mx-2"
-                                    >
-                                        <a
-                                            href="login.html"
-                                            class="slide__link text"
-                                        >
-                                            Đăng nhập
-                                        </a>
-                                    </button>
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-secondary d-md-block d-none"
-                                    >
-                                        <a
-                                            href="signIn.html"
-                                            class="slide__link text"
-                                        >
-                                            Đăng ký
-                                        </a>
-                                    </button>
                                 </div>
+                                <div class="header__cart">
+                                    <div class="header__cart-wrap">
+                                        <button class="btn btn-outline-success">
+                                            <i
+                                                class="header__cart-icon ti-shopping-cart"
+                                            ></i>
+                                            <span class="header__cart-notice"
+                                                >0</span
+                                            >
+                                        </button>
+                                        <div class="header__cart-list">
+                                            <img
+                                                src="../img/no_cart.png"
+                                                alt="Chưa có hàng"
+                                                class="header__cart-list--no-cart-img"
+                                            />
+                                            <span
+                                                class="header__cart-list--no-cart-msg"
+                                                >Chưa có sản phẩm</span
+                                            >
+                                            <h4 class="header__cart-heading">
+                                                Sản phẩm đã thêm
+                                            </h4>
+                                            <ul
+                                                class="header__cart-list-item"
+                                            ></ul>
+
+                                            <a
+                                                href="cart.html "
+                                                class="header__cart-item-btn btn btn--primary"
+                                            >
+                                                Xem giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary d-md-block d-none mx-2"
+                                >
+                                    <a
+                                        href="login.html"
+                                        class="slide__link text"
+                                    >
+                                        Đăng nhập
+                                    </a>
+                                </button>
                             </div>
                         </nav>
                     </div>
@@ -127,20 +153,27 @@
                     <div class="container mb-30 product__detail">
                         <div class="row">
                             <div class="col-md-5 col-12 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <img
                                         src="../img/fruit-8.jpg"
                                         class="card-img-top"
                                         alt="fruit-1"
+                                        id="product-img"
                                     />
                                 </div>
                             </div>
                             <div class="col-md-7 col-12 mb-15">
                                 <div class="product__info text-start">
-                                    <h1 href="" class="product__name">
+                                    <h1
+                                        href=""
+                                        class="product__name"
+                                        id="product-name"
+                                    >
                                         Nho Mẫu Đơn Shine Muscat Hàn Quốc
                                     </h1>
-                                    <span class="product__price"
+                                    <span
+                                        class="product__price"
+                                        id="product-price"
                                         >1,400,000</span
                                     >
                                     <ul class="product__description">
@@ -168,25 +201,26 @@
                                     <div class="product__btns">
                                         <div class="product__count">
                                             <button
-                                                onclick="document.querySelector('#count').stepDown()"
+                                                onclick="document.querySelector('#product-count').stepDown()"
                                             >
                                                 -
                                             </button>
                                             <input
                                                 type="number"
                                                 name="count"
-                                                id="count"
+                                                id="product-count"
                                                 min="1"
                                                 step="1"
                                                 value="1"
                                             />
                                             <button
-                                                onclick="document.querySelector('#count').stepUp()"
+                                                onclick="document.querySelector('#product-count').stepUp()"
                                             >
                                                 +
                                             </button>
                                         </div>
                                         <button
+                                            id="liveToastBtn"
                                             class="btn btn-warning product__btn"
                                         >
                                             Thêm vào giỏ hàng
@@ -196,6 +230,7 @@
                             </div>
                         </div>
                     </div>
+
                     <h2 class="title my-4 text-start">Sản phẩm liên quan</h2>
                     <div class="container mb-30">
                         <div class="row product-recomend">
@@ -207,45 +242,41 @@
                             >
                                 <i class="ti-angle-right"></i>
                             </button>
+
                             <div
                                 class="col-6 col-sm-4 col-md-3 mb-15 product-recomend__item"
                             >
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
-                                            src="../img/fruit-8.jpg"
+                                            src="../img/fruit-9.jpg"
                                             class="card-img-top"
-                                            alt="fruit-1"
+                                            alt="fruit-9"
                                         />
                                     </a>
                                     <div class="card-body">
-                                        <a
-                                            href="detailFruit.html"
-                                            class="card-title d-block"
-                                        >
-                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                        <a class="card-title d-block">
+                                            Táo Toki Nhật
                                         </a>
-                                        <span class="card-price"
-                                            >1,400,000</span
-                                        >
+                                        <span class="card-price">999,000</span>
                                     </div>
                                 </div>
                             </div>
                             <div
                                 class="col-6 col-sm-4 col-md-3 mb-15 product-recomend__item"
                             >
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
-                                            src="../img/fruit-8.jpg"
+                                            src="../img/fruit-4.jpg"
                                             class="card-img-top"
-                                            alt="fruit-1"
+                                            alt="fruit-4"
                                         />
                                     </a>
                                     <div class="card-body">
@@ -253,26 +284,24 @@
                                             href="detailFruit.html"
                                             class="card-title d-block"
                                         >
-                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                            Táo Envy Size 24 Mỹ
                                         </a>
-                                        <span class="card-price"
-                                            >1,400,000</span
-                                        >
+                                        <span class="card-price">350,000</span>
                                     </div>
                                 </div>
                             </div>
                             <div
                                 class="col-6 col-sm-4 col-md-3 mb-15 product-recomend__item"
                             >
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
-                                            src="../img/fruit-8.jpg"
+                                            src="../img/fruit-5.jpg"
                                             class="card-img-top"
-                                            alt="fruit-1"
+                                            alt="fruit-5"
                                         />
                                     </a>
                                     <div class="card-body">
@@ -280,18 +309,41 @@
                                             href="detailFruit.html"
                                             class="card-title d-block"
                                         >
-                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
+                                            Dâu Minori Giống Nhật
                                         </a>
-                                        <span class="card-price"
-                                            >1,400,000</span
-                                        >
+                                        <span class="card-price">299,000</span>
                                     </div>
                                 </div>
                             </div>
                             <div
                                 class="col-6 col-sm-4 col-md-3 mb-15 d-none d-md-block product-recomend__item"
                             >
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
+                                    <a
+                                        class="card-img d-block"
+                                        href="detailFruit.html"
+                                    >
+                                        <img
+                                            src="../img/fruit-6.jpg"
+                                            class="card-img-top"
+                                            alt="fruit-6"
+                                        />
+                                    </a>
+                                    <div class="card-body">
+                                        <a
+                                            href="detailFruit.html"
+                                            class="card-title d-block"
+                                        >
+                                            Lựu Peru
+                                        </a>
+                                        <span class="card-price">399,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-6 col-sm-4 col-md-3 mb-15 d-none product-recomend__item"
+                            >
+                                <div class="card d-block product-item">
                                     <a
                                         href="detailFruit.html"
                                         class="card-img d-block"
@@ -318,7 +370,7 @@
                             <div
                                 class="col-6 col-sm-4 col-md-3 mb-15 d-none product-recomend__item"
                             >
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
                                         href="detailFruit.html"
                                         class="card-img d-block"
@@ -345,34 +397,7 @@
                             <div
                                 class="col-6 col-sm-4 col-md-3 mb-15 d-none product-recomend__item"
                             >
-                                <div class="card d-block">
-                                    <a
-                                        href="detailFruit.html"
-                                        class="card-img d-block"
-                                    >
-                                        <img
-                                            src="../img/fruit-8.jpg"
-                                            class="card-img-top"
-                                            alt="fruit-1"
-                                        />
-                                    </a>
-                                    <div class="card-body">
-                                        <a
-                                            href="detailFruit.html"
-                                            class="card-title d-block"
-                                        >
-                                            Nho Mẫu Đơn Shine Muscat Hàn Quốc
-                                        </a>
-                                        <span class="card-price"
-                                            >1,400,000</span
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="col-6 col-sm-4 col-md-3 mb-15 d-none product-recomend__item"
-                            >
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
                                         href="detailFruit.html"
                                         class="card-img d-block"
@@ -407,6 +432,36 @@
                         </div>
                     </div>
                 </div>
+                <div class="product-toast">
+                    <div
+                        id="liveToast"
+                        class="toast hide"
+                        role="alert"
+                        aria-live="assertive"
+                        aria-atomic="true"
+                    >
+                        <div class="toast-header">
+                            <strong class="me-auto product-toast__title"
+                                >Thêm vào giỏ thành công</strong
+                            >
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="toast"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="toast-body text-center p-0">
+                            <a
+                                href="cart.html"
+                                class="d-block product-toast__link"
+                            >
+                                Xem giỏ hàng
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <footer class="grid bg-light">
                     <div class="container">
                         <div class="row">
@@ -523,7 +578,26 @@
                 </footer>
             </div>
         </div>
+
+        <script>
+            const imgElement = document.getElementById("product-img");
+            const nameElement = document.getElementById("product-name");
+            const priceElement = document.getElementById("product-price");
+
+            const data = JSON.parse(
+                localStorage.getItem("web_fruits_detail_product")
+            );
+            const { src, title, price } = data;
+            imgElement.setAttribute("src", src);
+            nameElement.innerText = title;
+            priceElement.innerText = price;
+        </script>
         <script src="../bootstrap/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+        <script src="../jquerry/min.js"></script>
+        <script src="../jquerry/index.js"></script>
+
         <script src="../js/validate.js"></script>
+        <script src="../js/product.js"></script>
+        <script src="../js/addProduct.js"></script>
     </body>
 </html>

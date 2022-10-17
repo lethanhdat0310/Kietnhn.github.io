@@ -39,17 +39,6 @@
                                     href="index.html"
                                     >FruitsShop</a
                                 >
-                                <button
-                                    type="button"
-                                    class="btn btn-outline-primary d-md-none d-block"
-                                >
-                                    <a
-                                        href="login.html"
-                                        class="slide__link text"
-                                    >
-                                        Đăng nhập
-                                    </a>
-                                </button>
 
                                 <div
                                     class="collapse navbar-collapse justify-content-between"
@@ -92,30 +81,67 @@
                                                 >Tác giả</a
                                             >
                                         </li>
+                                        <li class="nav-item d-block d-md-none">
+                                            <a class="nav-link" href="cart.html"
+                                                >Giỏ hàng</a
+                                            >
+                                        </li>
+                                        <li class="nav-item d-block d-md-none">
+                                            <a
+                                                class="nav-link"
+                                                href="login.html"
+                                                >Đăng nhập</a
+                                            >
+                                        </li>
                                     </ul>
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-primary d-md-block d-none mx-2"
-                                    >
-                                        <a
-                                            href="login.html"
-                                            class="slide__link text"
-                                        >
-                                            Đăng nhập
-                                        </a>
-                                    </button>
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-secondary d-md-block d-none"
-                                    >
-                                        <a
-                                            href="signIn.html"
-                                            class="slide__link text"
-                                        >
-                                            Đăng ký
-                                        </a>
-                                    </button>
                                 </div>
+                                <div class="header__cart">
+                                    <div class="header__cart-wrap">
+                                        <button class="btn btn-outline-success">
+                                            <i
+                                                class="header__cart-icon ti-shopping-cart"
+                                            ></i>
+                                            <span class="header__cart-notice"
+                                                >0</span
+                                            >
+                                        </button>
+                                        <div class="header__cart-list">
+                                            <img
+                                                src="../img/no_cart.png"
+                                                alt="Chưa có hàng"
+                                                class="header__cart-list--no-cart-img"
+                                            />
+                                            <span
+                                                class="header__cart-list--no-cart-msg"
+                                                >Chưa có sản phẩm</span
+                                            >
+                                            <h4 class="header__cart-heading">
+                                                Sản phẩm đã thêm
+                                            </h4>
+                                            <ul
+                                                class="header__cart-list-item"
+                                            ></ul>
+
+                                            <a
+                                                href="cart.html "
+                                                class="header__cart-item-btn btn btn--primary"
+                                            >
+                                                Xem giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary d-md-block d-none mx-2"
+                                >
+                                    <a
+                                        href="login.html"
+                                        class="slide__link text"
+                                    >
+                                        Đăng nhập
+                                    </a>
+                                </button>
                             </div>
                         </nav>
                     </div>
@@ -164,10 +190,10 @@
                         </div>
                         <div class="row">
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-8.jpg"
@@ -176,10 +202,7 @@
                                         />
                                     </a>
                                     <div class="card-body">
-                                        <a
-                                            href="detailFruit.html"
-                                            class="card-title d-block"
-                                        >
+                                        <a class="card-title d-block">
                                             Nho Mẫu Đơn Shine Muscat Hàn Quốc
                                         </a>
                                         <span class="card-price"
@@ -189,10 +212,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-1.jpg"
@@ -212,10 +235,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-2.jpg"
@@ -235,10 +258,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-9.jpg"
@@ -259,10 +282,10 @@
                             </div>
 
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-4.jpg"
@@ -282,10 +305,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-5.jpg"
@@ -305,10 +328,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-6.jpg"
@@ -351,10 +374,10 @@
                         </div>
                         <div class="row">
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-7.jpg"
@@ -375,10 +398,10 @@
                             </div>
 
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-8.jpg"
@@ -400,10 +423,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-1.jpg"
@@ -423,10 +446,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-2.jpg"
@@ -446,10 +469,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-9.jpg"
@@ -470,10 +493,10 @@
                             </div>
 
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-4.jpg"
@@ -493,10 +516,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-5.jpg"
@@ -516,10 +539,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-6.jpg"
@@ -539,10 +562,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-8.jpg"
@@ -564,10 +587,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-7.jpg"
@@ -588,10 +611,10 @@
                             </div>
 
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-8.jpg"
@@ -613,10 +636,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-1.jpg"
@@ -636,10 +659,10 @@
                                 </div>
                             </div>
                             <div class="col-6 col-lg-3 col-md-4 mb-15">
-                                <div class="card d-block">
+                                <div class="card d-block product-item">
                                     <a
-                                        href="detailFruit.html"
                                         class="card-img d-block"
+                                        href="detailFruit.html"
                                     >
                                         <img
                                             src="../img/fruit-2.jpg"
@@ -785,7 +808,11 @@
                 </footer>
             </div>
         </div>
+        <script src="../jquerry/min.js"></script>
+        <script src="../jquerry/index.js"></script>
         <script src="../bootstrap/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
         <script src="../js/validate.js"></script>
+        <script src="../js/product.js"></script>
+        <script src="../js/addProduct.js"></script>
     </body>
 </html>
