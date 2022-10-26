@@ -88,7 +88,21 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 1.8rem;
     font-weight: 600;
 }
+#form-search {
+    margin: 0 !important;
+}
 
+.search .form-control {
+    color: #333 !important;
+    border-radius: 0 !important;
+    padding: 7px 12px;
+}
+.search .btn {
+    border-radius: 0 !important;
+}
+.collapse.show ~ .header__cart {
+    display: none;
+}
 /* logo */
 .logo__brand {
     font-size: 5rem;

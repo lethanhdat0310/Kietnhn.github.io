@@ -8,16 +8,15 @@ $(document).ready(function () {
     const headingCart = document.querySelector(".header__cart-heading");
     const listItemCart = document.querySelector(".header__cart-list-item");
 
-    console.log(headingCart);
     const products =
         JSON.parse(localStorage.getItem("web_fruits_products")) || [];
 
     // /update notice
     function updateCart() {
-        console.log("upodating");
+        // console.log("upodating");
         notice.innerText = products.length;
         if (products.length > 0) {
-            console.log(products);
+            // console.log(products);
             imgNoCart.classList.add("d-none");
             msgNoCart.classList.add("d-none");
 
@@ -25,9 +24,8 @@ $(document).ready(function () {
             listItemCart.classList.remove("d-none");
             // ending reset
 
+            // render product item
             products.forEach((product) => {
-                console.log(product);
-                // render product item
                 const li = document.createElement("li");
                 li.classList.add("header__cart-item");
 
@@ -85,7 +83,7 @@ $(document).ready(function () {
                 listItemCart.appendChild(li);
             });
         } else {
-            console.log("empty");
+            // console.log("empty");
             imgNoCart.classList.remove("d-none");
             msgNoCart.classList.remove("d-none");
 

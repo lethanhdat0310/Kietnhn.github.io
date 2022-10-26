@@ -6,6 +6,7 @@ $(document).ready(() => {
     if (products.length > 0) {
         $("#form-pay").show();
         $("#no-cart").hide();
+        // render cart
         products.forEach((product, index) => {
             // td sum
             const tdSum = document.createElement("td");
@@ -216,7 +217,7 @@ $(document).ready(() => {
             };
         });
     };
-    handleDeleteProduct([deleteBtns]);
+    handleDeleteProduct([...deleteBtns]);
     // edit product
     const inputs = document.querySelectorAll(".count-input");
     const newCount = [];

@@ -9,6 +9,11 @@ function Validator(formid, option) {
         }
     }
     const validatorRules = {
+        noSpaceStart: (value) => {
+            return !value.startsWith(" ")
+                ? undefined
+                : "Không bắt đầu bằng khoảng cách";
+        },
         required: (value) => {
             return value.trim() ? undefined : "Vui lòng nhập trường này";
         },
@@ -128,6 +133,7 @@ function Validator(formid, option) {
                 }
             } else {
                 console.log("wrong!!!");
+                console.log("do nothing");
             }
         };
     }
@@ -139,4 +145,5 @@ Validator("#form-log-in", {
     replace: "../html/fruits.html",
 });
 Validator("#form-pay");
+Validator("#form-search");
 Validator("#form-email-footer");
